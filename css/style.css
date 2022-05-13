@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato&display=swap');
+*{
+	font-family: 'Lato', sans-serif;
+}
+.banner{
+	height: 100vh;
+	background: radial-gradient(100% 307.79% at 100% 0%, #57BF95 0%, #37755C 100%);
+}
+
+.banner h1{
+	font-size: 55px;
+	font-weight: 800;
+	
+}
+
+.bg-green{
+	background-color: #317156;
+}
+
+
+.bg-green-light{
+	background-color: #52E56C;	
+}
+
+.rounded-pill{
+	border-radius: 50em;
+}
+
+.font-bold{
+	font-weight: bold;
+}
+
+.decoration-none{
+	text-decoration: none!important;
+}
+
+.text-success{
+	color: #317156!important;
+}
+
+p{
+	font-size: 18px;
+}
+
+.section-3{
+	 background: #EFF9F0;;
+}
+
+.section-4 .icon{
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(180deg, #55BA91 0%, rgba(34, 78, 53, 0.94) 100%);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-4 .icon .iconify{
+	font-size: 55px;
+	color: white;
+}
+
+.footer{
+	background: radial-gradient(100% 307.79% at 100% 0%, #57BF95 0%, #37755C 100%);
+	min-height: 60vh;
+	margin-top: 60px;
+}
+
+.section-5 ul{
+	font-size: 22px;
+}
+
+.section-5 ul li{
+	margin: 10px 0px;
+}
+
+
+.footer h4{
+	letter-spacing: .2em;
+}
+
+
+.sosmed{
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	margin-right: 20px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	background-color: white;
+}
+
+@media(max-width: 576px){
+	.banner{
+		height: 90vh;
+	}
+	.phone{
+		position: relative!important;
+		top: 0px!important;
+		margin-top: 40px;
+	}
+}
