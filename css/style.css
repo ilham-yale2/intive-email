@@ -1,16 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 *{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 .banner{
 	height: 100vh;
 	background: radial-gradient(100% 307.79% at 100% 0%, #57BF95 0%, #37755C 100%);
 }
 
+.right{
+	padding-left: 150px;
+}
+
+.rounded-15{
+	border-radius: 15px;
+}
+
 .banner h1{
-	font-size: 55px;
-	font-weight: 800;
-	
+	font-size: 70px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 1200;
+	letter-spacing: 5px;
 }
 
 .bg-green{
@@ -102,4 +112,25 @@ p{
 		top: 0px!important;
 		margin-top: 40px;
 	}
+
+	.right{
+		padding-left: 0px;
+	}
+
+	.banner h1{
+		font-size: 50px;
+	}
+
+	.banner img{
+		width: 100%;
+		bottom: -150px!important;
+	}
+}
+
+.overflow-hidden{
+	overflow: hidden;
+}
+
+.semibold{
+	font-weight: 600;
 }
