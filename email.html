@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<style>
+        
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato1&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+		*{
+			font-family: 'Inter', sans-serif;
+            margin:0;
+            padding:0;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        }
+        
+        .col-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+        }
+
+        .col-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+        }
+
+        .col-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+        }
+
+        .col-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        }
+
+        .col-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        }
+
+        .col-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+        }
+
+        .col-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        }
+
+        .col-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        }
+
+        .col-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        }
+
+        .col-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+        }
+
+        .col-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+        }
+
+        .col-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+        }
+
+        .col-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        }
+        .col-md {
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+        .col-md-auto {
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+        }
+        .col-md-1 {
+            -ms-flex: 0 0 8.333333%;
+            flex: 0 0 8.333333%;
+            max-width: 8.333333%;
+        }
+        .col-md-2 {
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%;
+        }
+        .col-md-3 {
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        .col-md-4 {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+        .col-md-5 {
+            -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+        .col-md-6 {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-md-7 {
+            -ms-flex: 0 0 58.333333%;
+            flex: 0 0 58.333333%;
+            width: 58.333333%;
+        }
+        .col-md-8 {
+            -ms-flex: 0 0 66.666667%;
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+        }
+        .col-md-9 {
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        .col-md-10 {
+            -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+            max-width: 83.333333%;
+        }
+        .col-md-11 {
+            -ms-flex: 0 0 91.666667%;
+            flex: 0 0 91.666667%;
+            max-width: 91.666667%;
+        }
+        .col-md-12 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: .4s ease-in-out
+            }
+        
+        .w-100 {
+        width: 100% !important;
+        }
+
+        .w-auto {
+        width: auto !important;
+        }
+
+        .h-25 {
+        height: 25% !important;
+        }
+
+        .h-50 {
+        height: 50% !important;
+        }
+
+        .h-75 {
+        height: 75% !important;
+        }
+
+        .h-100 {
+        height: 100% !important;
+        }
+
+        .h-auto {
+        height: auto !important;
+        }
+
+        .mw-100 {
+        max-width: 100% !important;
+        }
+
+        .mh-100 {
+        max-height: 100% !important;
+        }
+
+        .min-vw-100 {
+        min-width: 100vw !important;
+        }
+
+        .min-vh-100 {
+        min-height: 100vh !important;
+        }
+
+        .vw-100 {
+        width: 100vw !important;
+        }
+
+        .vh-100 {
+        height: 100vh !important;
+        }
+
+        .m-0 {
+        margin: 0 !important;
+        }
+
+        .mt-0,
+        .my-0 {
+        margin-top: 0 !important;
+        }
+
+        .mr-0,
+        .mx-0 {
+        margin-right: 0 !important;
+        }
+
+        .mb-0,
+        .my-0 {
+        margin-bottom: 0 !important;
+        }
+
+        .ml-0,
+        .mx-0 {
+        margin-left: 0 !important;
+        }
+
+        .m-1 {
+        margin: 0.25rem !important;
+        }
+
+        .mt-1,
+        .my-1 {
+        margin-top: 0.25rem !important;
+        }
+
+        .mr-1,
+        .mx-1 {
+        margin-right: 0.25rem !important;
+        }
+
+        .mb-1,
+        .my-1 {
+        margin-bottom: 0.25rem !important;
+        }
+
+        .ml-1,
+        .mx-1 {
+        margin-left: 0.25rem !important;
+        }
+
+        .m-2 {
+        margin: 0.5rem !important;
+        }
+
+        .mt-2,
+        .my-2 {
+        margin-top: 0.5rem !important;
+        }
+
+        .mr-2,
+        .mx-2 {
+        margin-right: 0.5rem !important;
+        }
+
+        .mb-2,
+        .my-2 {
+        margin-bottom: 0.5rem !important;
+        }
+
+        .ml-2,
+        .mx-2 {
+        margin-left: 0.5rem !important;
+        }
+
+        .m-3 {
+        margin: 1rem !important;
+        }
+
+        .mt-3,
+        .my-3 {
+        margin-top: 1rem !important;
+        }
+
+        .mr-3,
+        .mx-3 {
+        margin-right: 1rem !important;
+        }
+
+        .mb-3,
+        .my-3 {
+        margin-bottom: 1rem !important;
+        }
+
+        .ml-3,
+        .mx-3 {
+        margin-left: 1rem !important;
+        }
+
+        .m-4 {
+        margin: 1.5rem !important;
+        }
+
+        .mt-4,
+        .my-4 {
+        margin-top: 1.5rem !important;
+        }
+
+        .mr-4,
+        .mx-4 {
+        margin-right: 1.5rem !important;
+        }
+
+        .mb-4,
+        .my-4 {
+        margin-bottom: 1.5rem !important;
+        }
+
+        .ml-4,
+        .mx-4 {
+        margin-left: 1.5rem !important;
+        }
+
+        .m-5 {
+        margin: 3rem !important;
+        }
+
+        .mt-5,
+        .my-5 {
+        margin-top: 3rem !important;
+        }
+
+        .mr-5,
+        .mx-5 {
+        margin-right: 3rem !important;
+        }
+
+        .mb-5,
+        .my-5 {
+        margin-bottom: 3rem !important;
+        }
+
+        .ml-5,
+        .mx-5 {
+        margin-left: 3rem !important;
+        }
+
+        .p-0 {
+        padding: 0 !important;
+        }
+
+        .pt-0,
+        .py-0 {
+        padding-top: 0 !important;
+        }
+
+        .pr-0,
+        .px-0 {
+        padding-right: 0 !important;
+        }
+
+        .pb-0,
+        .py-0 {
+        padding-bottom: 0 !important;
+        }
+
+        .pl-0,
+        .px-0 {
+        padding-left: 0 !important;
+        }
+
+        .p-1 {
+        padding: 0.25rem !important;
+        }
+
+        .pt-1,
+        .py-1 {
+        padding-top: 0.25rem !important;
+        }
+
+        .pr-1,
+        .px-1 {
+        padding-right: 0.25rem !important;
+        }
+
+        .pb-1,
+        .py-1 {
+        padding-bottom: 0.25rem !important;
+        }
+
+        .pl-1,
+        .px-1 {
+        padding-left: 0.25rem !important;
+        }
+
+        .p-2 {
+        padding: 0.5rem !important;
+        }
+
+        .pt-2,
+        .py-2 {
+        padding-top: 0.5rem !important;
+        }
+
+        .pr-2,
+        .px-2 {
+        padding-right: 0.5rem !important;
+        }
+
+        .pb-2,
+        .py-2 {
+        padding-bottom: 0.5rem !important;
+        }
+
+        .pl-2,
+        .px-2 {
+        padding-left: 0.5rem !important;
+        }
+
+        .p-3 {
+        padding: 1rem !important;
+        }
+
+        .pt-3,
+        .py-3 {
+        padding-top: 1rem !important;
+        }
+
+        .pr-3,
+        .px-3 {
+        padding-right: 1rem !important;
+        }
+
+        .pb-3,
+        .py-3 {
+        padding-bottom: 1rem !important;
+        }
+
+        .pl-3,
+        .px-3 {
+        padding-left: 1rem !important;
+        }
+
+        .p-4 {
+        padding: 1.5rem !important;
+        }
+
+        .pt-4,
+        .py-4 {
+        padding-top: 1.5rem !important;
+        }
+
+        .pr-4,
+        .px-4 {
+        padding-right: 1.5rem !important;
+        }
+
+        .pb-4,
+        .py-4 {
+        padding-bottom: 1.5rem !important;
+        }
+
+        .pl-4,
+        .px-4 {
+        padding-left: 1.5rem !important;
+        }
+
+        .p-5 {
+        padding: 3rem !important;
+        }
+
+        .pt-5,
+        .py-5 {
+        padding-top: 3rem !important;
+        }
+
+        .pr-5,
+        .px-5 {
+        padding-right: 3rem !important;
+        }
+
+        .pb-5,
+        .py-5 {
+        padding-bottom: 3rem !important;
+        }
+
+        .pl-5,
+        .px-5 {
+        padding-left: 3rem !important;
+        }
+
+        .m-n1 {
+        margin: -0.25rem !important;
+        }
+
+        .mt-n1,
+        .my-n1 {
+        margin-top: -0.25rem !important;
+        }
+
+        .mr-n1,
+        .mx-n1 {
+        margin-right: -0.25rem !important;
+        }
+
+        .mb-n1,
+        .my-n1 {
+        margin-bottom: -0.25rem !important;
+        }
+
+        .ml-n1,
+        .mx-n1 {
+        margin-left: -0.25rem !important;
+        }
+
+        .m-n2 {
+        margin: -0.5rem !important;
+        }
+
+        .mt-n2,
+        .my-n2 {
+        margin-top: -0.5rem !important;
+        }
+
+        .mr-n2,
+        .mx-n2 {
+        margin-right: -0.5rem !important;
+        }
+
+        .mb-n2,
+        .my-n2 {
+        margin-bottom: -0.5rem !important;
+        }
+
+        .ml-n2,
+        .mx-n2 {
+        margin-left: -0.5rem !important;
+        }
+
+        .m-n3 {
+        margin: -1rem !important;
+        }
+
+        .mt-n3,
+        .my-n3 {
+        margin-top: -1rem !important;
+        }
+
+        .mr-n3,
+        .mx-n3 {
+        margin-right: -1rem !important;
+        }
+
+        .mb-n3,
+        .my-n3 {
+        margin-bottom: -1rem !important;
+        }
+
+        .ml-n3,
+        .mx-n3 {
+        margin-left: -1rem !important;
+        }
+
+        .m-n4 {
+        margin: -1.5rem !important;
+        }
+
+        .mt-n4,
+        .my-n4 {
+        margin-top: -1.5rem !important;
+        }
+
+        .mr-n4,
+        .mx-n4 {
+        margin-right: -1.5rem !important;
+        }
+
+        .mb-n4,
+        .my-n4 {
+        margin-bottom: -1.5rem !important;
+        }
+
+        .ml-n4,
+        .mx-n4 {
+        margin-left: -1.5rem !important;
+        }
+
+        .m-n5 {
+        margin: -3rem !important;
+        }
+
+        .mt-n5,
+        .my-n5 {
+        margin-top: -3rem !important;
+        }
+
+        .mr-n5,
+        .mx-n5 {
+        margin-right: -3rem !important;
+        }
+
+        .mb-n5,
+        .my-n5 {
+        margin-bottom: -3rem !important;
+        }
+
+        .ml-n5,
+        .mx-n5 {
+        margin-left: -3rem !important;
+        }
+
+        .m-auto {
+        margin: auto !important;
+        }
+
+        .mt-auto,
+        .my-auto {
+        margin-top: auto !important;
+        }
+
+        .mr-auto,
+        .mx-auto {
+        margin-right: auto !important;
+        }
+
+        .mb-auto,
+        .my-auto {
+        margin-bottom: auto !important;
+        }
+
+        .ml-auto,
+        .mx-auto {
+        margin-left: auto !important;
+        }
+		.banner{
+			height: 100vh;
+			background: radial-gradient(100% 307.79% at 100% 0%, #57BF95 0%, #3C8265 47.39%, #244F3D 100%);
+		}
+
+		.right{
+			padding-left: 150px;
+		}
+
+		.rounded-15{
+			border-radius: 15px;
+		}
+
+		.banner h1{
+			font-size: 70px;
+			font-family: 'Lato', sans-serif;
+			font-weight: 1200;
+			letter-spacing: 5px;
+		}
+
+		.bg-green{
+			background-color: #317156;
+		}
+
+
+		.bg-green-light{
+			background-color: #52E56C;	
+		}
+
+		.rounded-pill{
+			border-radius: 50em;
+		}
+
+		.font-bold{
+			font-weight: bold;
+		}
+
+		.decoration-none{
+			text-decoration: none!important;
+		}
+
+		.text-success{
+			color: #317156!important;
+		}
+
+		p{
+			font-size: 18px;
+		}
+
+		.section-3{
+			background: #EFF9F0;;
+		}
+
+		.section-4 .icon{
+			width: 100px;
+			height: 100px;
+			background: linear-gradient(180deg, #55BA91 0%, rgba(34, 78, 53, 0.94) 100%);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.section-4 .icon .iconify{
+			font-size: 55px;
+			color: white;
+		}
+
+		.footer{
+			background: radial-gradient(100% 307.79% at 100% 0%, #57BF95 0%, #3C8265 47.39%, #244F3D 100%);
+			min-height: 60vh;
+			margin-top: 60px;
+		}
+
+		.section-5 ul{
+			font-size: 22px;
+		}
+
+		.section-5 ul li{
+			margin: 10px 0px;
+		}
+
+		.sosmed{
+			width: 50px;
+			height: 50px;
+			font-size: 30px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+			background-color: white;
+		}
+
+		@media(max-width: 992px){
+			.right{
+				padding-left: 0px;
+				max-width: 80%;
+				margin: 0px auto;
+			}
+
+		}
+		@media(max-width: 576px){
+			.banner{
+				height: 90vh;
+			}
+			.phone{
+				position: relative!important;
+				top: 0px!important;
+				margin-top: 40px;
+			}
+
+            
+			.banner h1{
+				font-size: 50px;
+			}
+
+			.banner img{
+				width: 100%;
+				bottom: -150px!important;
+			}
+		}
+        .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        }
+
+		.overflow-hidden{
+			overflow: hidden;
+		}
+
+		.semibold{
+			font-weight: 600;
+		}
+        .justify-content-center{
+            justify-content: center
+        }
+        .position-absolute{
+            position: absolute;
+        }
+        .position-relative{
+            position: relative;
+        }
+        .position-fixed{
+            position: fixed;
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        
+        .text-center{
+            text-align: center;
+        }
+        .col-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+        }
+        .mx-auto{
+            margin: 0px auto;
+        }
+        .text-white{
+            color: white;
+        }
+        .container {
+            min-width: 992px !important;
+        }
+        .col-md-4{
+            width: 33.333333%;
+        }
+        .d-flex{
+                display: flex
+            }
+
+	</style>
+
+
+	<title>Intive Studio</title>
+</head>
+
+<body style="width: 100%;overflow-x: hidden;">
+
+	<nav class="navbar navbar-dark py-5 fixed-top" >
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" width="100" alt="">
+			</a>
+		</div>
+	</nav>
+	<div class="banner position-relative overflow-hidden">
+		<img src="img/icon.svg" srcset="" class="position-absolute p-0 banner-img" width="50%"  style="bottom: -280px; max-width: 500px;">
+		<div class="px-2 px-md-5 h-100">
+			<div class="row align-items-center my-auto" style="display: flex; flex-wrap: wrap; align-items: center; padding-top: 100px">
+				<div class="col-md-7 right col-12 ml-auto text-center text-white">
+					<h1 class="mb-0">FREE TRIAL</h1>
+					<h1 class="mb-2" >1 MONTH</h1>
+					<div class="p-2 bg-green col-10 mx-auto rounded-15" style="margin:0px auto; padding:20px">
+						<h2 class="mb-0 semibold">Enterprise Resource Planning</h2>
+					</div>
+					<p class="mt-4 mb-5 px-2 mx-2">
+						Sebuah sistem informasi yang sangat berguna untuk mengatur berbagai kebutuhan perusahaan
+					</p>
+					<a href="https://wa.me/6281252524177" class="mx-auto decoration-none mt-5">
+						<button class="btn bg-green-light rounded-pill px-5 d-inline-flex align-items-center py-2">
+							<span class="iconify mr-2" data-icon="akar-icons:whatsapp-fill"></span>
+							<span>Chat Sekarang</span>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-2 py-5">
+		<div class="container">
+			<h2 class="font-bold text-center text-success ">WHY ERP ?</h2>
+			<p class="text-center text-success mt-4 ">
+				Membantu  proses bisnis perusahaan lebih cepat, lebih mudah, dan lebih efisien. <br> Anda tidak perlu selalu berada di kantor anda hanya untuk memantau proses bisnis. 
+			</p>
+		</div>
+	</div>
+	<div class="position-relative my-5">
+		<img src="img/2.svg" class="position-absolute col-md-4 col-10 d-none d-md-block p-0" style="right: 0; bottom: -20%; " alt="">
+		<div class="section-3 py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-11  mx-md-0">
+						<h2 class="mb-4 font-bold text-success">MULTI PLATFORM</h2>
+						<p class="text-success ">
+							Anda dapat dengan mudah memantau dan mengakses ERP melalui device apapun yg anda miliki secara real time, kapanpun dan dimanapun.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-4 py-5 mt-5">
+		<div class="container">
+			<h2 class="text-center text-success font-bold">
+				WHAT YOU GET
+			</h2>
+			<div class="row mt-5" style="flex-wrap: wrap">
+				<div class="col-md-4  mt-5 text-center">
+					<div class="icon mx-auto text-center" >
+						<img src="img/v1.svg" alt="">
+					</div>
+					<h3 class="font-bold mt-4">WEBSITE & MARKETING</h3>
+				</div>
+				<div class="col-md-4  mt-5 text-center">
+					<div class="icon mx-auto text-center" >
+						<img src="img/v2.svg" alt="">
+					</div>
+					<h3 class="font-bold mt-4">SALES & FINANCE</h3>
+				</div>
+				<div class="col-md-4  mt-5 text-center">
+					<div class="icon mx-auto text-center" >
+						<img src="img/v3.svg" alt="">
+					</div>
+					<h3 class="font-bold mt-4">PRODUCTIVITY
+						& SERVICE</h3>
+				</div>
+			</div>
+            <div class="row mb-5">
+                <div class="col-md-4  mt-5 text-center">
+					<div class="icon mx-auto text-center" >
+						<img src="img/v4.svg" alt="">
+					</div>
+					<h3 class="font-bold mt-4">HUMAN RESOURCE</h3>
+				</div>
+				<div class="col-md-4  mt-5 text-center">
+                    <div class="icon mx-auto text-center" >
+						<img src="img/v5.svg" alt="">
+					</div>
+					<h3 class="font-bold mt-4">INVENTORY &
+						MANUFACTURING</h3>
+				</div>
+				<div class="col-md-4  mt-5 text-center">
+					<div class="icon mx-auto text-center" >
+						<img src="img/v6.svg" alt="">
+					</div>
+					<h3 class="font-bold mt-4">CUSTOMIZATION
+						TOOL</h3>
+				</div>
+            </div>
+		</div>
+	</div>
+	<div class="section-5 py-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<ul class="text-success col-md-7 col-12 px-5 px-md-2 ">
+					<li>Penggunaan dan Tampilan yang tidak ribet sederhana dan mudah dipahami</li>
+					<li>Dapat disesuaikan dengna seluruh SOP kegiatan usaha</li>
+					<li>Tidak perlu berlangganan tiap bulan dan tiap user</li>
+					<li>Hak akses bisa disesuaikan mengikuti kegiatan bisnis perusahaan</li>
+					<li>Integrasi dengan sistem/layanan lainnya</li>
+					<li>Dan masih banyak fitur customable lainnya!</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section-6 py-5">
+		<div class="container">
+			<h2 class="text-center text-success font-bold mb-5">
+				OUR PARTNER
+			</h2>
+			<div class="row">
+				<div class="col-11 col-md-9 mx-auto">
+					<img src="img/group-1.svg" class="w-100" alt="">
+				</div>
+				<div class="col-11 col-md-9 mx-auto">
+					<img src="img/group-3.svg" class="w-100" alt="">
+				</div>
+				<div class="col-11 col-md-9 mx-auto">
+					<img src="img/group-2.svg" class="w-100" alt="">
+				</div>
+				<div class="col-11 col-md-9 mx-auto">
+					<img src="img/group-4.svg" class="w-100" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer pb-5">
+		<div class="container position-relative">
+			<div class="row">
+				<img src="img/phone.svg	" alt="" class="position-absolute phone  pl-5 ml-5  mx-auto" style=" top: -70px;width: 27%;">
+				<div class="col-md-7 text-center ml-auto py-5" style="margin-left: auto">
+					<h2 class="text-white mb-5">
+						 konsultasikan segera bisnis anda	
+					</h2>
+					<a href="https://wa.me/6281252524177" class="mx-auto decoration-none mt-5">
+						<button class="btn bg-green-light rounded-pill px-5 d-inline-flex align-items-center py-2" style="font-size: 20px;">
+							<span class="iconify mr-2" data-icon="akar-icons:whatsapp-fill"></span>
+							<span>Chat Sekarang</span>
+						</button>
+					</a>
+				</div>
+			</div>
+            <div class="mt-5 pt-5 w-100">
+                <h4 class="font-bold w-100 text-center mt-5 pt-0 pt-md-0 text-white">GIVE US A FOLLOW</h4>
+                <div class="w-100 d-flex justify-content-center pt-3 pb-5 text-center " style="margin: 0px auto; justify-content: center">
+                    <div class="sosmed text-success ml-auto">
+                        <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+                    </div>
+                    <div class="sosmed text-success mx-3">
+                        <span class="iconify" data-icon="brandico:facebook"></span>
+                    </div>
+                    <div class="sosmed text-success mr-auto">
+                        <span class="iconify" data-icon="entypo-social:linkedin"></span>
+                    </div>
+                </div>
+                <h5 class="text-center text-white w-100">
+                    INTIVE STUDIO
+                </h5>
+                <p class="w-100 px-3 px-md-0 text-center text-white pb-5">
+                    Jl. Pd. Wiyung Indah Utara VI KX 34 Wiyung, Kec. Wiyung,<br>
+                    Surabaya, Jawa Timur 60228
+
+                </p>
+            </div>
+		</div>
+	</div>
+	
+
+	</body>
+</html>
