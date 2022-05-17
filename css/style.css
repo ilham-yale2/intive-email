@@ -85,17 +85,10 @@ p{
 	margin: 10px 0px;
 }
 
-
-.footer h4{
-	letter-spacing: .2em;
-}
-
-
 .sosmed{
 	width: 50px;
 	height: 50px;
 	font-size: 30px;
-	margin-right: 20px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
